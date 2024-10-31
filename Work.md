@@ -54,3 +54,4 @@ docker run -p 3000:3000 my-node-app
 
 Server listening on port 3000!
 ```
+<img width="440" alt="image" src="https://github.com/user-attachments/assets/93fa3610-ec54-4f0c-83ad-f451c192cf92">

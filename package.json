@@ -1,13 +1,13 @@
 {
   "name": "quest",
   "version": "1.0.0",
-  "description": "",
+  "description": "### Q. What is this quest?",
   "main": "src/000.js",
   "scripts": {
     "start": "node src/000.js"
   },
   "dependencies": {
-    "express": "~4.16.3"
+    "express": "^4.21.1"
   },
   "keywords": [],
   "author": "Rearc",

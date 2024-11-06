@@ -60,3 +60,5 @@ Server listening on port 3000!
 1. Able to get the url for the secret_word
 <img width="1354" alt="image" src="https://github.com/user-attachments/assets/2a48f908-24c6-4bbd-838d-7d5d3065b252">
 
+2. Fixed all the issues, able to access the application
+<img width="965" alt="image" src="https://github.com/user-attachments/assets/c599d98c-9cb9-441c-a808-792c3801660f">

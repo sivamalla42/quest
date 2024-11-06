@@ -55,3 +55,9 @@ docker run -p 3000:3000 my-node-app
 Server listening on port 3000!
 ```
 <img width="440" alt="image" src="https://github.com/user-attachments/assets/93fa3610-ec54-4f0c-83ad-f451c192cf92">
+
+
+docker build -t my-linux-binary-test .
+docker push my-linux-binary-test 448265486185.dkr.ecr.us-west-2.amazonaws.com/test:latest
+
+aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 448265486185.dkr.ecr.us-west-2.amazonaws.com

@@ -1,20 +1,24 @@
-# Use Node.js version 10 or later
-FROM node:10
+# Base image
+FROM node:16
 
 # Set the working directory in the container
-WORKDIR /usr/src/app
+WORKDIR /app
 
-# Copy package.json and package-lock.json
+# Copy package.json and install dependencies
 COPY package*.json ./
-
-# Install dependencies
 RUN npm install
 
-# Copy the application source code
+# Copy application code
 COPY . .
 
-# Expose the port the app runs on
+# Add the custom certificate and update CA certificates
+# COPY rearc.crt /usr/local/share/ca-certificates/rearc.crt
+# RUN apt-get update && apt-get install -y ca-certificates && update-ca-certificates && rm -rf /var/lib/apt/lists/*
+
+# Expose the application port
 EXPOSE 3000
 
-# Command to run the application
+# Start the application
 CMD ["npm", "start"]
+
+ENV SECRET_WORD="TwelveFactor"
